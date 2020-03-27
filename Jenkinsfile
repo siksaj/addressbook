@@ -24,7 +24,7 @@ pipeline{
                 }
             }
             stage('UnitTest'){
-                agent {label 'slave_win'}
+                agent {label 'winslave'}
                 steps{
                     git 'https://github.com/devops-trainer/DevOpsClassCodes.git'
                     bat 'mvn test'
